@@ -337,7 +337,6 @@ def cfg_to_args(config):
             if value:
                 kwargs[argname] = value
 
-    kwargs['install_requires'] = ['requests', 'tqdm']
     if 'long_description' not in kwargs:
         kwargs['long_description'] = read_description_file(config)
 
